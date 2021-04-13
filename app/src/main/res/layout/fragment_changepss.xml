@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:padding="35dp"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Change Password"
+        android:background="@drawable/border"
+        android:layout_height="wrap_content"
+        android:fontFamily="georgia"
+        android:textAllCaps="true"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="80dp"
+        android:textColor="#000"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="250dp"
+        android:id="@+id/oldPasswordTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <EditText
+            android:id="@+id/oldPassET"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:fontFamily="georgia"
+            android:layout_height="wrap_content"
+            android:hint="Current Password"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/newPasswordTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oldPasswordTIL"
+
+        >
+
+        <EditText
+            android:id="@+id/newPassET"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:fontFamily="georgia"
+            android:layout_height="wrap_content"
+            android:hint="New Password"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/confirmPasswordTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newPasswordTIL"
+
+        >
+
+        <EditText
+            android:id="@+id/confirmPassET"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="georgia"
+            android:hint="Confirm Password"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_below="@+id/confirmPasswordTIL"
+        android:layout_marginLeft="190dp"
+        android:padding="15dp"
+        android:fontFamily="georgia"
+        android:layout_marginTop="30dp"
+        android:textColor="#fff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/custom5"
+        android:text="Change" />
+
+</RelativeLayout>

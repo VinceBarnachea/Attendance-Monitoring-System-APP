@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/bg"
+    tools:context=".StartActivity"
+ >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Check Attendance"
+            android:background="@drawable/border"
+            android:layout_height="wrap_content"
+            android:fontFamily="georgia"
+            android:textAllCaps="true"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:textColor="#000"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="georgia"
+        android:tooltipText="Course/Section"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        />
+    <TextView
+        android:id="@+id/spinnerResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="18dp"
+        android:fontFamily="georgia"
+        android:textColor="#fff"
+        android:background="@drawable/custom5"
+        android:textStyle="bold"
+        android:text="Open Date Picker"/>
+
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:fontFamily="georgia"
+
+        android:textSize="20dp"
+        android:background="@drawable/custom5"
+        android:onClick="goToCheckAttendance"/>
+
+
+</LinearLayout>

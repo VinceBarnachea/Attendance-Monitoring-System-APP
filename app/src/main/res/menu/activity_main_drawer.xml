@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showOut="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_check"
+            android:icon="@drawable/ic_check_box_black_24dp"
+            android:title="Check Attendance" />
+        <item
+            android:id="@+id/nav_add"
+            android:icon="@drawable/ic_add_to_photos_black_24dp"
+            android:title="Add Class" />
+
+        <item
+            android:id="@+id/nav_view"
+            android:icon="@drawable/ic_pageview_black_24dp"
+            android:title=" View Attendance" />
+        <item
+            android:id="@+id/nav_change"
+            android:icon="@drawable/ic_phonelink_lock_black_24dp"
+            android:title="Change Password" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/profileUser"
+                android:icon="@drawable/user"
+                android:title="Profile"/>
+            <item android:id="@+id/about_us"
+                android:icon="@drawable/about_us"
+                android:title="About"/>
+
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@drawable/ic_close_black_24dp"
+                android:title="Log Out" />
+
+        </menu>
+    </item>
+
+
+
+</menu>

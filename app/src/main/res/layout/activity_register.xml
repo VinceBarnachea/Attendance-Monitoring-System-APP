@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/bg"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome!"
+        android:fontFamily="georgia"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:textColor="#1f2f98"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userNameTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        >
+
+        <EditText
+            android:id="@+id/usernameEt"
+            android:inputType="textEmailAddress"
+            android:hint="Username"
+            android:fontFamily="georgia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/userNameTIL"
+        >
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:fontFamily="georgia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/emailTIL"
+        android:layout_marginTop="15dp"
+        android:id="@+id/passwordTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#185a9d"
+        >
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:fontFamily="georgia"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/passwordTIL"
+        android:layout_marginTop="15dp"
+        android:id="@+id/repasswordTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#185a9d"
+        >
+
+        <EditText
+            android:id="@+id/repasswordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Connfirm Password"
+            android:fontFamily="georgia"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:text="Sign Up"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_below="@+id/repasswordTIL"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/email_acc"
+        android:background="@drawable/custom5"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/have_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have a account? Login"
+        android:textAlignment="center"
+        android:textColor="@color/black_color"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/registerBtn"/>
+</RelativeLayout>

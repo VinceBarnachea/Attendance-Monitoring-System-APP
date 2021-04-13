@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StartActivity"
+    android:background="#0b3440">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Attendance"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"/>
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:tooltipText="Course/Section"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        />
+    <TextView
+        android:id="@+id/spinnerResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d8d4cf"
+        android:textStyle="bold"
+        android:text="Open Date Picker"/>
+
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:layout_marginVertical="60dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="#bec1c6"/>
+<!--        android:onClick="goToCheckAttendance"/>-->
+
+
+
+</LinearLayout>

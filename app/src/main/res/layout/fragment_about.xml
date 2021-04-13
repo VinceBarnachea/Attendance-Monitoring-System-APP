@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/bg"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/aboutus"
+        android:layout_width="wrap_content"
+        android:text="about us"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        android:textSize="35dp"
+            android:layout_marginLeft="60dp"
+        android:fontFamily="georgia"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"/>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/laman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\t\t\tAttendance Monitoring System (AMS) is an android application which is developed for a more efficient and fastest way of checking attendance. It is an application which caters mobile gadgets for easy accessibility purposes. Attendance Monitoring System will save a lot more time in terms of checking and monitoring the attendance. AMS application was developed to help transform the monotonous way of checking attendance into a more current and modernized way.
+
+        \n\nThe AMS was developed for Instructors, Facilatators, Professors and the likes. Attendance Monitoring System is an application which attendance checkers can rely on.
+
+        \n\nFor more questions and inquiries:
+        \n\nCONTACT US
+        \nEmail: \tamsphil@gmail.com
+        \nContact number:\t 09123456789"
+                    android:padding="20dp"
+                    android:textColor="@color/black_color"
+                    android:textSize="18dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="georgia"
+                    android:background="@drawable/border"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

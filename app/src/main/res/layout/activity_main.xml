@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:background="@drawable/received_676077526245242"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="100dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/threed_round"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/register_Btn"
+        android:layout_width="match_parent"
+        android:background="@drawable/custom5"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/login_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom5"
+        android:layout_below="@+id/register_Btn"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Log In"
+        android:textAllCaps="false" />
+
+
+
+</RelativeLayout>
